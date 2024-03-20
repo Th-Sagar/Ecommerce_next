@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const login = () => {
@@ -8,7 +8,7 @@ const login = () => {
       style={{
         backgroundImage: "url('/images/login.png')",
         backgroundRepeat: "no-repeat",
-        backgroundSize:"40rem",
+        
        
        
       }}
@@ -23,15 +23,15 @@ const login = () => {
           <div class="relative z-0 my-5">
             <input
               type="text"
-              id="floating_standard"
+              id="Email"
               class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 focus:outline-none focus:ring-0 focus:border-green-400 peer"
               placeholder=" "
             />
             <label
-              for="Username"
+              for="Email"
               class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6  top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-green-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
             >
-              Username
+              Email
             </label>
           </div>
           <br />
@@ -39,7 +39,7 @@ const login = () => {
           <div class="relative z-0 my-5">
             <input
               type="text"
-              id="floating_standard"
+              id="Password"
               class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 focus:outline-none focus:ring-0 focus:border-green-400 peer"
               placeholder=" "
             />
@@ -61,7 +61,7 @@ const login = () => {
 
           <div className="flex gap-1">
             <h1>Don't have Account?</h1>
-            <span className="text-blue-600 cursor-pointer">SignUp</span>
+            <Link href={"/signup"} className="text-blue-600 cursor-pointer">SignUp</Link>
           </div>
         </form>
       </main>
