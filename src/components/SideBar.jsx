@@ -48,7 +48,7 @@ const SideBar = () => {
     <>
       <section
         id="sidebar"
-        className="hidden sm:flex max-w-screen-2xl  justify-center items-center relative mt-1"
+        className="hidden sm:flex max-w-screen-2xl  justify-center items-center relative mt-5 "
       >
         <ul className="flex gap-16 justify-center items-center">
           <li>
@@ -57,7 +57,7 @@ const SideBar = () => {
                 onClick={showElectronics}
                 className={`${
                   pathname === "/HomeAppliances" || pathname === "/LifeStyle"
-                    ? "text-red-500"
+                    ? "text-red-300"
                     : ""
                 }`}
               >
@@ -72,7 +72,7 @@ const SideBar = () => {
                   <Link
                     href={"/HomeAppliances"}
                     className={`${
-                      pathname === "/HomeAppliances" ? "text-red-500" : ""
+                      pathname === "/HomeAppliances" ? "text-red-300" : ""
                     }`}
                   >
                     Home Appliances
@@ -83,7 +83,7 @@ const SideBar = () => {
                   <Link
                     href={"/LifeStyle"}
                     className={`${
-                      pathname === "/LifeStyle" ? "text-red-500" : ""
+                      pathname === "/LifeStyle" ? "text-red-300" : ""
                     }`}
                   >
                     Life Style
@@ -96,7 +96,7 @@ const SideBar = () => {
             <Link
               href={"/HealthBeauty"}
               className={`${
-                pathname === "/HealthBeauty" ? "text-red-500" : ""
+                pathname === "/HealthBeauty" ? "text-red-300" : ""
               }`}
             >
               Health & Beauty
@@ -111,7 +111,7 @@ const SideBar = () => {
                   pathname === "/Formal" ||
                   pathname === "/SemiFormal" ||
                   pathname === "/Casual"
-                    ? "text-red-500"
+                    ? "text-red-300"
                     : ""
                 }`}
               >
@@ -127,7 +127,7 @@ const SideBar = () => {
                   <Link
                     href={"/Formal"}
                     className={`${
-                      pathname === "/Formal" ? "text-red-500" : ""
+                      pathname === "/Formal" ? "text-red-300" : ""
                     }`}
                   >
                     Formal
@@ -137,7 +137,7 @@ const SideBar = () => {
                   <Link
                     href={"/SemiFormal"}
                     className={`${
-                      pathname === "/SemiFormal" ? "text-red-500" : ""
+                      pathname === "/SemiFormal" ? "text-red-300" : ""
                     }`}
                   >
                     Semi Formal
@@ -147,7 +147,7 @@ const SideBar = () => {
                   <Link
                     href={"/Casual"}
                     className={`${
-                      pathname === "/Casual" ? "text-red-500" : ""
+                      pathname === "/Casual" ? "text-red-300" : ""
                     }`}
                   >
                     Casual
@@ -161,7 +161,7 @@ const SideBar = () => {
             <Link
               href={"/WomensFashion"}
               className={`${
-                pathname === "/WomensFashion" ? "text-red-500" : ""
+                pathname === "/WomensFashion" ? "text-red-300" : ""
               }`}
             >
               Womens Fashion
@@ -170,7 +170,7 @@ const SideBar = () => {
           <li onClick={closeSideBar}>
             <Link
               href={"/Sports"}
-              className={`${pathname === "/Sports" ? "text-red-500" : ""}`}
+              className={`${pathname === "/Sports" ? "text-red-300" : ""}`}
             >
               Sports
             </Link>
@@ -178,7 +178,7 @@ const SideBar = () => {
           <li onClick={closeSideBar}>
             <Link
               href={"/Groceries"}
-              className={`${pathname === "/Groceries" ? "text-red-500" : ""}`}
+              className={`${pathname === "/Groceries" ? "text-red-300" : ""}`}
             >
               Groceries
             </Link>

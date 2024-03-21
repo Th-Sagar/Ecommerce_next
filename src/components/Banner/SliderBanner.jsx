@@ -10,7 +10,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green" ,borderRadius:"50%"}}
+      style={{ ...style, display: "block", background: "orange" ,borderRadius:"50%"}}
       onClick={onClick}
     />
   );
@@ -21,7 +21,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green" ,borderRadius:"50%"
+      style={{ ...style, display: "block", background: "orange" ,borderRadius:"50%"
     
 }}
       onClick={onClick}
@@ -43,7 +43,7 @@ const SliderBanner = () => {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className="container md:mx-auto mx-0 mt-10">
+    <div className="container  md:mx-auto mx-0 mt-10">
       <div className="slider-container">
         <Slider {...settings}>
           <div>
@@ -66,7 +66,7 @@ const SliderBanner = () => {
             <Image
               src={"/images/banner3.png"}
               width={10000}
-              height={200}
+              height={300}
               alt="banner1"
             />
           </div>

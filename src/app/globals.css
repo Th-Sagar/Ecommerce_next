@@ -7,6 +7,13 @@
 body {
   font-family: poppins, sans-serif !important;
   
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 @media (max-width: 768px) {
   .slick-prev,

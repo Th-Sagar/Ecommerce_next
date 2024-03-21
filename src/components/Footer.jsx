@@ -46,7 +46,7 @@ const Footer = () => {
   }, []);
   return (
     <>
-      <section className="bg-green-400 text-center p-2 ">
+      <section className="bg-oranges text-white text-center p-2 ">
         <div className="flex justify-evenly items-center">
           <Link href={"/"}>
             <Image src="/logo.png" alt="logo" width={80} height={80} />
@@ -56,7 +56,7 @@ const Footer = () => {
             <li onClick={closeSideBar}>
               <Link
                 href={"/LifeStyle"}
-                className={`${pathname === "/LifeStyle" ? "text-red-500" : ""}`}
+                className={`${pathname === "/LifeStyle" ? "text-red-300" : ""}`}
               >
                 Life Style
               </Link>
@@ -66,7 +66,7 @@ const Footer = () => {
               <Link
                 href={"/HomeAppliances"}
                 className={`${
-                  pathname === "/HomeAppliances" ? "text-red-500" : ""
+                  pathname === "/HomeAppliances" ? "text-red-300" : ""
                 }`}
               >
                 Home Appliances
@@ -77,7 +77,7 @@ const Footer = () => {
               <Link
                 href={"/HealthBeauty"}
                 className={`${
-                  pathname === "/HealthBeauty" ? "text-red-500" : ""
+                  pathname === "/HealthBeauty" ? "text-red-300" : ""
                 }`}
               >
                 Health & Beauty
@@ -87,7 +87,7 @@ const Footer = () => {
             <li onClick={closeSideBar} className="mb-2">
               <Link
                 href={"/Formal"}
-                className={`${pathname === "/Formal" ? "text-red-500" : ""}`}
+                className={`${pathname === "/Formal" ? "text-red-300" : ""}`}
               >
                 Formal
               </Link>
@@ -97,7 +97,7 @@ const Footer = () => {
               <Link
                 href={"/SemiFormal"}
                 className={`${
-                  pathname === "/SemiFormal" ? "text-red-500" : ""
+                  pathname === "/SemiFormal" ? "text-red-300" : ""
                 }`}
               >
                 Semi Formal
@@ -107,7 +107,7 @@ const Footer = () => {
             <li onClick={closeSideBar}>
               <Link
                 href={"/Casual"}
-                className={`${pathname === "/Casual" ? "text-red-500" : ""}`}
+                className={`${pathname === "/Casual" ? "text-red-300" : ""}`}
               >
                 Casual
               </Link>
@@ -117,7 +117,7 @@ const Footer = () => {
               <Link
                 href={"/WomensFashion"}
                 className={`${
-                  pathname === "/WomensFashion" ? "text-red-500" : ""
+                  pathname === "/WomensFashion" ? "text-red-300" : ""
                 }`}
               >
                 Womens Fashion
@@ -126,7 +126,7 @@ const Footer = () => {
             <li onClick={closeSideBar}>
               <Link
                 href={"/Sports"}
-                className={`${pathname === "/Sports" ? "text-red-500" : ""}`}
+                className={`${pathname === "/Sports" ? "text-red-300" : ""}`}
               >
                 Sports
               </Link>
@@ -134,7 +134,7 @@ const Footer = () => {
             <li onClick={closeSideBar}>
               <Link
                 href={"/Groceries"}
-                className={`${pathname === "/Groceries" ? "text-red-500" : ""}`}
+                className={`${pathname === "/Groceries" ? "text-red-300" : ""}`}
               >
                 Groceries
               </Link>
