@@ -9,8 +9,6 @@ const signup = () => {
         backgroundImage: "url('/images/signup.png')",
         backgroundRepeat: "no-repeat",
         backgroundSize:"25rem"
-       
-       
       }}
     >
       <main className=" border shadow-xl py-16 rounded-xl w-[80%] md:w-[40%] 2xl:w-2/6">

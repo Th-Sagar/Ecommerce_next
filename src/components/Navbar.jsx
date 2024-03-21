@@ -35,7 +35,7 @@ const Navbar = () => {
               </button>
             </div>
 
-            <div></div>
+            
           </ul>
         </nav>
       </section>
