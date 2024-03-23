@@ -39,9 +39,9 @@ const ShowBanner = () => {
   ];
   return (
     <>
-      <div className=" max-w-screen-2xl md:mx-auto mx-0 my-10 border-red-600 flex justify-around overflow-x-scroll no-scrollbar gap-20">
+      <div className=" max-w-screen-2xl lg:mx-auto mx-5 md:mx-16 my-10 border-red-600 flex justify-around overflow-x-scroll no-scrollbar gap-20">
         {items.map((item, i) => (
-          <div key={i} className="flex text-center flex-col gap-4">
+          <div key={i} className="flex text-center justify-center flex-col gap-4 hover:text-oranges">
           <SmallCard title={item.title} image={item.image}/>
           </div>
         ))}
