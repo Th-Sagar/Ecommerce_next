@@ -6,7 +6,7 @@ const SmallCard = ({ title, image }) => {
     <>
       
         <Image src={image} width={100} height={100} alt={title} />
-        <h1>{title}</h1>
+        <p className="mt-2 text-center">{title}</p>
      
     </>
   );
