@@ -48,7 +48,7 @@ const SideBar = () => {
     <>
       <section
         id="sidebar"
-        className="hidden sm:flex max-w-screen-2xl  justify-center items-center relative mt-5 "
+        className="hidden sm:flex max-w-screen-2xl  justify-center items-center relative mt-5  "
       >
         <ul className="flex gap-16 justify-center items-center">
           <li>

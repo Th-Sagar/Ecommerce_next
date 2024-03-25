@@ -17,6 +17,9 @@ const Page = () => {
         <hr className="mx-5 md:mx-20" />
         <SalesItems />
         <Categories/>
+
+
+       
       </section>
     </>
   );

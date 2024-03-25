@@ -1,7 +1,6 @@
 import React from "react";
 import BigCard from "../BigCard";
 
-
 const SalesItems = () => {
   const items = [
     {
@@ -43,19 +42,21 @@ const SalesItems = () => {
     },
   ];
   return (
-    <div className="flex  max-w-screen-2xl  md:flex-nowrap text-center gap-5 lg:gap-20 justify-center items-center overflow-scroll no-scrollbar  lg:mx-auto mx-5 md:mx-16 my-10 z-10">
+    <div className="  max-w-screen-2xl    lg:mx-auto mx-5 md:mx-16 my-10 grid place-items-center md:grid-cols-3 lg:grid-cols-5 ">
       {items.map((item, i) => (
         <div
           key={i}
-          className=" hover:shadow-2xl flex flex-col justify-center items-center  p-10 w-full "
+          className=" hover:shadow-2xl p-10 flex flex-col justify-center items-center"
         >
-
-          <BigCard image={item.image} title={item.title} DiscountPrice={item.DiscountPrice} ActualPrice={item.ActualPrice} Discount={item.Discount}/>
-      
+          <BigCard
+            image={item.image}
+            title={item.title}
+            DiscountPrice={item.DiscountPrice}
+            ActualPrice={item.ActualPrice}
+            Discount={item.Discount}
+          />
         </div>
       ))}
-
-      
     </div>
   );
 };

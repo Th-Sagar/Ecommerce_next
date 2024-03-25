@@ -10,19 +10,19 @@ const Navbar = () => {
   const handleShow = () => {
     gsap.to("#hideSearch", {
       opacity: 0,
-      duration:0.1,
+      duration: 0.1,
       ease: "power4.out",
     });
     gsap.to("#searchitem", {
       opacity: 1,
-      delay:0.3,
+      delay: 0.3,
       ease: "power4.out",
     });
   };
 
   return (
     <>
-      <section className="bg-oranges text-white">
+      <section id="top" className="bg-oranges text-white">
         <nav className="flex items-center sm:justify-around gap-2 sm:gap-0">
           <Link href={"/"}>
             <Image src="/logo.png" alt="logo" width={80} height={80} />
@@ -34,11 +34,11 @@ const Navbar = () => {
             >
               <input
                 type="text"
-                className="rounded-xl py-2 pl-3 w-full outline-none p-1 "
+                className="rounded-xl py-2 pl-3 w-full text-black outline-none p-1 "
                 placeholder="Enter any thing to search..."
               />
               <FaSearch
-                className="ml-2  hover:scale-105 transition-all duration-200 ease-in"
+                className="ml-2 cursor-pointer  hover:scale-105 transition-all duration-200 ease-in"
                 size={16}
               />
             </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
             <div onClick={handleShow}>
               <FaSearch
                 id="hideSearch"
-                className="ml-2   hover:scale-105 transition-all duration-200 ease-in"
+                className="ml-2 cursor-pointer   hover:scale-105 transition-all duration-200 ease-in"
                 size={16}
               />
             </div>
