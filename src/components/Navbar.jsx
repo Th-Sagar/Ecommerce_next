@@ -7,6 +7,8 @@ import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
+
+
   const handleShow = () => {
     gsap.to("#hideSearch", {
       opacity: 0,
@@ -20,12 +22,21 @@ const Navbar = () => {
     });
   };
 
+useGSAP(()=>{
+  gsap.to("#logo",{
+    x:40,
+    duration:2,
+    
+  })
+},[])
+ 
+
   return (
     <>
       <section id="top" className="bg-oranges text-white">
         <nav className="flex items-center sm:justify-around gap-2 sm:gap-0">
           <Link href={"/"}>
-            <Image src="/logo.png" alt="logo" width={80} height={80} />
+            <Image src="/logo.png" className="right-10" id="logo" alt="logo" width={80} height={80} />
           </Link>
           <ul className="flex gap-2 sm:gap-16 justify-center items-center">
             <div
