@@ -1,7 +1,22 @@
+import { useFormik } from "formik";
 import Link from "next/link";
 import React from "react";
+import { loginInSchema } from "../Schemas/login";
+
 
 const login = () => {
+  const initialValues={
+    email:"",
+    password:"",
+
+  }
+  const {values,errors,handleBlur,handleChange,handleSubmit,touched}=useFormik({
+    initialValues,
+    validationSchema:loginInSchema,
+    onSubmit:(values,action)=>{
+      console.log(values);
+    }
+  })
   return (
     <section
       className="h-[86vh] w-full flex justify-center items-center bg-left-bottom  md:bg-right-top lg:bg-right-bottom"
@@ -19,13 +34,15 @@ const login = () => {
 
         <hr className="mx-10" />
 
-        <form className="mt-5 flex  justify-center items-center flex-col ">
+        <form onSubmit={handleSubmit} className="mt-5 flex  justify-center items-center flex-col ">
           <div class="relative z-0 my-5">
             <input
               type="text"
               id="Email"
               class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 focus:outline-none focus:ring-0 focus:border-oranges peer"
               placeholder=" "
+              values={values.email}
+              onChange={handleChange}
             />
             <label
               for="Email"
