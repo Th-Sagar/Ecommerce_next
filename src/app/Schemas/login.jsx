@@ -1,7 +1,8 @@
 import * as Yup from "yup";
 
-export const loginInSchema = Yup.object({
-  email: Yup.string().email("Invalid email").required("Required"),
-
-  password: Yup.string().password("Invalid password").required("Required").min(10, "Password is too short - should be 10 chars minimum."),
+export const loginSchema = Yup.object({
+  email: Yup.string().email("Invalid email").required("Email is required"),
+  password: Yup.string()
+    .min(8, "Password must be at least 8 characters")
+    .required("Password is required"),
 });
