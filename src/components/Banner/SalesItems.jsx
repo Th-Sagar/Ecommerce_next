@@ -1,5 +1,6 @@
 import React from "react";
 import BigCard from "../BigCard";
+import Link from "next/link";
 
 const SalesItems = () => {
   const items = [
@@ -9,6 +10,8 @@ const SalesItems = () => {
       DiscountPrice: "Rs.875",
       ActualPrice: "Rs.4000",
       Discount: "-78% ",
+      Link:"/Watch"
+      
     },
     {
       title: "The Psychology of Money By Morgan Housel",
@@ -16,6 +19,7 @@ const SalesItems = () => {
       DiscountPrice: "Rs.160",
       ActualPrice: "Rs.640",
       Discount: "-75% ",
+      Link:"/"
     },
     {
       title:
@@ -24,6 +28,7 @@ const SalesItems = () => {
       DiscountPrice: "Rs.999",
       ActualPrice: "Rs.3490",
       Discount: "-71% ",
+      Link:"/Earphone"
     },
     {
       title: "Softy Sensitive Baby Wet Wipes (Aloe+chamomile) - 80 wipes",
@@ -31,6 +36,7 @@ const SalesItems = () => {
       DiscountPrice: "Rs.69",
       ActualPrice: "Rs.125",
       Discount: "-44% ",
+      Link:"/"
     },
     {
       title:
@@ -39,6 +45,7 @@ const SalesItems = () => {
       DiscountPrice: "Rs.255",
       ActualPrice: "Rs.255",
       Discount: "-0% ",
+      Link:"/"
     },
   ];
   return (
@@ -48,6 +55,7 @@ const SalesItems = () => {
           key={i}
           className=" hover:shadow-2xl p-10 flex flex-col justify-center items-center"
         >
+          <Link href={item.Link}>
           <BigCard
             image={item.image}
             title={item.title}
@@ -55,6 +63,7 @@ const SalesItems = () => {
             ActualPrice={item.ActualPrice}
             Discount={item.Discount}
           />
+          </Link>
         </div>
       ))}
     </div>
