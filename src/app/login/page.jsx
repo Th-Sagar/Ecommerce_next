@@ -5,24 +5,18 @@ import Link from "next/link";
 import { loginSchema } from "../Schemas/login";
 
 const Login = () => {
-  const {
-    values,
-    errors,
-    handleChange,
-    handleSubmit,
-    touched,
-    resetForm,
-  } = useFormik({
-    initialValues: {
-      email: "",
-      password: "",
-    },
-    validationSchema: loginSchema,
-    onSubmit: (values) => {
-      console.log(values);
-      resetForm();
-    },
-  });
+  const { values, errors, handleChange, handleSubmit, touched, resetForm } =
+    useFormik({
+      initialValues: {
+        email: "",
+        password: "",
+      },
+      validationSchema: loginSchema,
+      onSubmit: (values) => {
+        console.log(values);
+        resetForm();
+      },
+    });
 
   return (
     <section
@@ -46,7 +40,6 @@ const Login = () => {
               id="email"
               className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 focus:outline-none focus:ring-0 focus:border-oranges peer"
               placeholder=" "
-              
               name="email"
               value={values.email}
               onChange={handleChange}
