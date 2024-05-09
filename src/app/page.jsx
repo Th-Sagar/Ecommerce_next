@@ -16,10 +16,7 @@ const Page = () => {
         <Timmer />
         <hr className="mx-5 md:mx-20" />
         <SalesItems />
-        <Categories/>
-
-
-       
+        <Categories />
       </section>
     </>
   );
