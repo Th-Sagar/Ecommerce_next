@@ -10,8 +10,7 @@ const SalesItems = () => {
       DiscountPrice: "Rs.875",
       ActualPrice: "Rs.4000",
       Discount: "-78% ",
-      Link:"/Watch"
-      
+      Link: "/Watch",
     },
     {
       title: "The Psychology of Money By Morgan Housel",
@@ -19,7 +18,7 @@ const SalesItems = () => {
       DiscountPrice: "Rs.160",
       ActualPrice: "Rs.640",
       Discount: "-75% ",
-      Link:"/"
+      Link: "/",
     },
     {
       title:
@@ -28,7 +27,7 @@ const SalesItems = () => {
       DiscountPrice: "Rs.999",
       ActualPrice: "Rs.3490",
       Discount: "-71% ",
-      Link:"/Earphone"
+      Link: "/Earphone",
     },
     {
       title: "Softy Sensitive Baby Wet Wipes (Aloe+chamomile) - 80 wipes",
@@ -36,7 +35,7 @@ const SalesItems = () => {
       DiscountPrice: "Rs.69",
       ActualPrice: "Rs.125",
       Discount: "-44% ",
-      Link:"/"
+      Link: "/",
     },
     {
       title:
@@ -45,7 +44,7 @@ const SalesItems = () => {
       DiscountPrice: "Rs.255",
       ActualPrice: "Rs.255",
       Discount: "-0% ",
-      Link:"/"
+      Link: "/",
     },
   ];
   return (
@@ -56,13 +55,13 @@ const SalesItems = () => {
           className=" hover:shadow-2xl p-10 flex flex-col justify-center items-center"
         >
           <Link href={item.Link}>
-          <BigCard
-            image={item.image}
-            title={item.title}
-            DiscountPrice={item.DiscountPrice}
-            ActualPrice={item.ActualPrice}
-            Discount={item.Discount}
-          />
+            <BigCard
+              image={item.image}
+              title={item.title}
+              DiscountPrice={item.DiscountPrice}
+              ActualPrice={item.ActualPrice}
+              Discount={item.Discount}
+            />
           </Link>
         </div>
       ))}
