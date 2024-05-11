@@ -10,7 +10,12 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "orange" ,borderRadius:"50%"}}
+      style={{
+        ...style,
+        display: "block",
+        background: "orange",
+        borderRadius: "50%",
+      }}
       onClick={onClick}
     />
   );
@@ -21,9 +26,12 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "orange" ,borderRadius:"50%"
-    
-}}
+      style={{
+        ...style,
+        display: "block",
+        background: "orange",
+        borderRadius: "50%",
+      }}
       onClick={onClick}
     />
   );
