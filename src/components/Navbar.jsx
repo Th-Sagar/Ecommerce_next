@@ -82,7 +82,7 @@ const Navbar = () => {
 
                 <div className=" absolute right-0 top-0 bg-transparent opacity-85 bg-white  text-black rounded-[50%] px-1 ">
                   <p>
-                    2
+                    1
                   </p>
                 </div>
               </div>
